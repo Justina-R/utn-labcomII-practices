@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 3</title>
+    <style>
+      h1 {
+        padding: 10px;
+        font-family: sans-serif;
+      }
+      fieldset {
+        margin: 20px;
+      }
+      legend,
+      textarea,
+      label {
+        font-family: sans-serif;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Práctica 3: Ejercicios de Formularios</h1>
+    <!-- Ejercicio 1 -->
+    <fieldset>
+      <legend>Ejercicio 1</legend>
+      <form action="">
+        <input type="text" required placeholder="Nombre" name="nombre" />
+        <input type="number" required placeholder="Edad" name="edad" />
+        <input type="submit" value="Enviar" />
+      </form>
+    </fieldset>
+
+    <!-- Ejercicio 2 -->
+    <fieldset>
+      <legend>Ejercicio 2</legend>
+      <form action="">
+        <input
+          type="email"
+          required
+          placeholder="Correo electrónico"
+          name="correo"
+        />
+        <input
+          type="password"
+          required
+          placeholder="Contraseña"
+          name="clave"
+          size="20"
+        />
+        <input
+          type="password"
+          required
+          placeholder="Confirmar contraseña"
+          name="confirmacion-clave"
+          size="20"
+        />
+      </form>
+    </fieldset>
+
+    <!-- Ejercicio 3 -->
+    <fieldset>
+      <legend>Ejercicio 3</legend>
+      <form action="">
+        <input type="text" required placeholder="Nombre" name="nombre" />
+        <input
+          type="email"
+          required
+          placeholder="Correo electrónico"
+          name="correo"
+        />
+        <input type="text" required placeholder="Dni" name="dni" />
+        <br />
+        <br />
+        <textarea
+          name="curriculum"
+          placeholder="Ingrese su curriculum..."
+        ></textarea>
+      </form>
+    </fieldset>
+
+    <!-- Ejercicio 4 -->
+    <fieldset>
+      <legend>Ejercicio 4</legend>
+      <form action="">
+        <input
+          type="email"
+          required
+          placeholder="Correo electrónico"
+          name="correo"
+        />
+        <input
+          type="password"
+          required
+          placeholder="Contraseña"
+          name="clave"
+          size="20"
+        />
+        <br /><br />
+        <label for="peliculas">¿Cuál pelicula le gusta más?</label>
+        <label for="the-shining">
+          <input type="checkbox" name="peliculas" value="the-shining" />
+          The Shining
+        </label>
+        <label for="pulp-fiction">
+          <input type="checkbox" name="peliculas" value="pulp-fiction" />
+          Pulp Fiction
+        </label>
+        <label for="indiana-jones">
+          <input type="checkbox" name="peliculas" value="indiana-jones" />
+          Indiana Jones
+        </label>
+        <br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </fieldset>
+
+    <!-- Ejercicio 5 -->
+    <fieldset>
+      <legend>Ejercicio 5</legend>
+      <form action="">
+        <label for="sistemOp"
+          >Ingrese su Sistema Operativo:
+          <br />
+          <input type="radio" name="sistemOp" value="linux" /> Linux
+          <input type="radio" name="sistemOp" value="windows" /> Windows
+        </label>
+      </form>
+    </fieldset>
+
+    <!-- Ejercicio 6 -->
+    <fieldset>
+      <legend>Ejercicio 6</legend>
+      <form action="">
+        <label for="mails"
+          >Ingrese su tipo de correo electrónico:
+          <br />
+          <select name="mails" multiple>
+            <option value="1">Hotmail</option>
+            <option value="2">Gmail</option>
+            <option value="3">Yahoo</option>
+          </select>
+        </label>
+        <br />
+        <button type="submit">Enviar</button>
+      </form>
+    </fieldset>
+
+    <!-- Ejercicio 7 -->
+    <fieldset>
+      <legend>Ejercicio 7</legend>
+      <form action="">
+        <select name="paises">
+          <option value="0" selected>Ingrese su país</option>
+          <optgroup label="America">
+            <option value="mexico">Mexico</option>
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+          </optgroup>
+          <optgroup label="Europa">
+            <option value="portugal">Portugal</option>
+            <option value="espania">España</option>
+            <option value="suiza">Suiza</option>
+          </optgroup>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </fieldset>
+
+    <!-- Ejercicio 8 -->
+    <fieldset>
+      <legend>Ejercicio 8</legend>
+      <form action="">
+        <label for="nombre">Ingrese su nombre:</label>
+          <input type="text" name="nombre" />
+          <br><br>
+          <label for="votacion">
+              Califique la calidad de la página: <br>
+              <input type="radio" name="votacion" />Excelente
+              <input type="radio" name="votacion" />Muy Buena
+              <input type="radio" name="votacion" />Buena
+              <input type="radio" name="votacion" />Regular
+              <input type="radio" name="votacion" />Mala
+          </label>
+          <button type="submit">Enviar</button>
+      </form>
+     </fieldset>
+  </body>
+</html>
